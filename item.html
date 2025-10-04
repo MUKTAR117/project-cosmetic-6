@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">C_lola cosmetics</div>
+            <div class="desktop-menu">
+                <a href="index.html#home">Home</a>
+                <a href="Products.html#products">Products</a>
+                <a href="Products.html#categories">Categories</a>
+                <a href="Products.html#about">About</a>
+                <a href="Products.html#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="signup-btn" style="background:#e259a0;color:#fff;border:none;border-radius:999px;padding:0.4rem 0.9rem;font-weight:600;">
+                    Sign Up
+                </button>
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <button class="go-back-btn" id="go-back-btn" style="margin: 2rem 2rem 0 2rem; background: none; border: none; cursor: pointer; font-size: 1.5rem; color: #db2777; padding: 20px 10px ; display: flex; align-items: center; gap: 0.5rem;">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+    <section class="item-details-section">
+        <div class="item-image">
+            <img id="item-img" src="images/#" alt="Item Image">
+        </div>
+        <div class="item-spec">
+            <div class="item-title" id="item-title"></div>
+            <div class="item-desc" id="item-desc"></div>
+            <div class="item-price" id="item-price">&euro;</div>
+            <div class="item-cart-controls">
+                <input type="number" id="item-qty" class="item-qty-input" min="1" value="1">
+                <button class="add-to-cart-btn" id="add-to-cart-btn">
+                    <i class="fas fa-plus"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('go-back-btn').addEventListener('click', function() {
+            window.history.length > 1 ? window.history.back() : window.location.href = 'Products.html';
+        });
+    </script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">C_lola cosmetics</div>
+                    <p class="footer-description">Premium cosmetics for the modern beauty enthusiast.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Fragrance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>Customer Service: support@glamour.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Glamour Cosmetics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

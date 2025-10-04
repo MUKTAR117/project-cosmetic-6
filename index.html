@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C_lola Cosmetics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+<style>
+  /* Mobile nav: show only brand, menu, and (if signed in) profile */
+  @media (max-width: 640px) {
+    .desktop-menu { display: none !important; }
+    .nav-actions { gap: 0.25rem; }
+    .nav-actions > button { display: none; }
+    /* Profile button visibility controlled by JS auth */
+    .signup-btn { display: none !important; }
+  }
+</style>
+</head>
+<body>
+        <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">C_lola cosmetics</div>
+            
+            <div class="desktop-menu">
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="Products.html#categories">Categories</a>
+                <a href="Products.html#about">About</a>
+                <a href="Products.html#contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                
+                
+                
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+         </div>
+        
+         <div class="mobile-menu">
+              <a href="#home">Home</a>
+              <a href="Products.html">Products</a>
+              <a href="Products.html#categories">Categories</a>
+              <a href="Products.html#about">About</a>
+              <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                 <div class="hero-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d74554ea-d869-45c0-ace4-defc165fe175.png" alt="Elegant display of various cosmetic products">
+                </div>
+                <div class="hero-text">
+                    <h1>Discover Your Natural Beauty</h1>
+                    <p>Premium quality cosmetics made with natural ingredients for your skincare and makeup needs.</p>
+                <!-- ========================= -->
+                <!-- Hero Section -->
+                <!-- ========================= -->
+                    <div class="hero-buttons">
+                        <a href="Products.html" class="btn-primary">Shop Now</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                <!-- ========================= -->
+                <!-- Other Sections (Categories, Products, About, etc.) -->
+                <!-- ========================= -->
+                    <a href="Products.html">
+                        <div class="category-icon">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6b23073a-0071-436b-a4b3-7daa871ffddf.png" alt="Skincare products">
+                        </div>
+                    </a>
+                    <h3>Skincare</h3>
+                </div>
+                <div class="category-card">
+                    <a href="Products.html">
+                        <div class="category-icon">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f947a56b-a1dc-45cf-9db1-ad3e08fbf5e3.png" alt="Makeup products">
+                        </div>
+                    </a>
+                    <h3>Makeup</h3>
+                </div>
+                <div class="category-card">
+                    <a href="Products.html">
+                        <div class="category-icon">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/35a2a0fc-6b60-4519-9913-24cc0b8f2cfb.png" alt="Hair care products">
+                        </div>
+                    </a>
+                    <h3>Hair Care</h3>
+                </div>
+                <div class="category-card">
+                    <a href="Products.html">
+                        <div class="category-icon">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c266676a-88b9-4966-9c1a-3b1889361dea.png" alt="Fragrance products">
+                        </div>
+                    </a>
+                    <h3>Fragrance</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <!-- Girly Beauty Sections -->
+    <section class="products"id="products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Featured Products</h2>
+                <a href="Products.html" class="view-all">View All →</a>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/01edbc50-e650-433d-9899-b66cfc1966da.png" alt="Hydrating Face Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Face Cream</h3>
+                        <p>Deep hydration for all skin types</p>
+                        <div class="product-footer">
+                            <span class="product-price"></span>
+                            
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1599183e-d739-4bb4-a917-b9f1013c049f.png" alt="Matte Lipstick">
+                    </div>
+                    <div class="product-info">
+                        <h3>Matte Lipstick</h3>
+                        <p>Long-lasting vibrant color</p>
+                        <div class="product-footer">
+                            <span class="product-price"></span>
+                           
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ee5066e5-ba93-4cd5-bd4f-bf0edb15e959.png" alt="Anti-Aging Serum">
+                    </div>
+                    <div class="product-info">
+                        <h3>Anti-Aging Serum</h3>
+                        <p>Youthful glow in a bottle</p>
+                        <div class="product-footer">
+                            <span class="product-price"></span>
+                           
+                               
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8380e58a-0fe4-4056-b1b7-93e528047cc8.png" alt="Rose Gold Palette">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rose Gold Palette</h3>
+                        <p>12 shades for every occasion</p>
+                        <div class="product-footer">
+                            <span class="product-price"></span>
+                            
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title about-title">Meet C_lola Cosmetics</h2>
+            <div class="about-content">
+                <p class="about-lead">C_lola Cosmetics is your destination for playful, modern beauty. We believe every person deserves to feel confident, radiant, and celebrated. Our collection is inspired by self-love, creativity, and the joy of self-care.</p>
+                <p class="about-desc">From nourishing skincare to vibrant makeup, luxurious hair care, and dreamy fragrances, we bring you products that are gentle, effective, and always cruelty-free. Join our glam squad and let your beauty shine!</p>
+                <div class="about-hashtag">
+                    <span>#BeBold #BeYou #BeC_lola</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Beauty Community</h2>
+            <p>Subscribe to get exclusive offers, beauty tips, and new product announcements</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email">
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!--contact form -->
+
+    <section id="contact" class="contact-form">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">C_lola cosmetics</div>
+                    <p class="footer-description">Premium cosmetics for the modern beauty enthusiast.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Fragrance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>Customer Service: </li>Clolacosmetics@gmail.com</li>
+                        <li>Phone: +33 644 04 0862</li>
+                        <li>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Glamour Cosmetics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</html>
